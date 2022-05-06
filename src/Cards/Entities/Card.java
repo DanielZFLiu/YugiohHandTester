@@ -24,4 +24,7 @@ public class Card {
     public String getGenericType(){
         return "游戏王卡牌";
     }
+    public ArrayList<String> getTags(){
+        return new ArrayList<>();
+    }
 }

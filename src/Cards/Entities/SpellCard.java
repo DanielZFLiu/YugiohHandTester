@@ -12,6 +12,11 @@ public class SpellCard extends Card {
         this.type = type;
         this.tags = tags;
     }
+    public SpellCard(String name) {
+        super(name);
+        this.type = "通常";
+        this.tags = new ArrayList<>();
+    }
 
     public String getType() {
         return type;
@@ -22,6 +27,7 @@ public class SpellCard extends Card {
         return "魔法卡";
     }
 
+    @Override
     public ArrayList<String> getTags(){
         return tags;
     }

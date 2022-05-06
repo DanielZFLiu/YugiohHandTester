@@ -34,22 +34,56 @@ public class FlundereezeEvaluator extends CardPool implements EvaluationSource {
 
     public void LLsFlundereezeList(){
 
+//        String[] deckList = new String[]{
+//                "随风旅鸟x帝企", "霞之谷的巨神鸟", "烈风帝 莱扎", "烈风之结界像",
+//                "随风旅鸟x知更鸟", "随风旅鸟x知更鸟", "随风旅鸟x知更鸟",
+//                "随风旅鸟x巨嘴鸟",
+//                "随风旅鸟x白头鹰", "随风旅鸟x白头鹰", "随风旅鸟x白头鹰",
+//                "随风旅鸟x鸵鸟",
+//                "星球改造", "随风旅鸟与迷之地图", "随风旅鸟与迷之地图", "随风旅鸟与迷之地图",
+//                "随风旅鸟与旅行准备", "随风旅鸟与旅行准备","随风旅鸟与旅行准备",
+//                "随风旅鸟与梦之町", "随风旅鸟与未知之风",
+//                "强欲而谦虚之壶","强欲而谦虚之壶","强欲而谦虚之壶",
+//                "金满而谦虚之壶","金满而谦虚之壶","金满而谦虚之壶",
+//                "墓穴的指名者", "墓穴的指名者", "抹杀之指名者", "抹杀之指名者",
+//                "灰流丽","无限泡影","次元吸引者","次元吸引者","次元吸引者",
+//                "冥王结界波","冥王结界波","冥王结界波",
+//                "虚无空间"
+//        };
+//
         String[] deckList = new String[]{
                 "随风旅鸟x帝企", "霞之谷的巨神鸟", "烈风帝 莱扎", "烈风之结界像",
                 "随风旅鸟x知更鸟", "随风旅鸟x知更鸟", "随风旅鸟x知更鸟",
                 "随风旅鸟x巨嘴鸟",
                 "随风旅鸟x白头鹰", "随风旅鸟x白头鹰", "随风旅鸟x白头鹰",
-                "随风旅鸟x鸵鸟",
-                "星球改造", "随风旅鸟与迷之地图", "随风旅鸟与迷之地图", "随风旅鸟与迷之地图",
+                "随风旅鸟x鸵鸟", "随风旅鸟x鸵鸟", //"随风旅鸟与未知之风",
+                "随风旅鸟与迷之地图", "随风旅鸟与迷之地图", "随风旅鸟与迷之地图",
                 "随风旅鸟与旅行准备", "随风旅鸟与旅行准备","随风旅鸟与旅行准备",
-                "随风旅鸟与梦之町", "随风旅鸟与未知之风",
+                "随风旅鸟与梦之町",
                 "强欲而谦虚之壶","强欲而谦虚之壶","强欲而谦虚之壶",
-                "金满而谦虚之壶","金满而谦虚之壶","金满而谦虚之壶",
-                "墓穴的指名者", "墓穴的指名者", "抹杀之指名者", "抹杀之指名者",
-                "灰流丽","无限泡影","次元吸引者","次元吸引者","次元吸引者",
-                "冥王结界波","冥王结界波","冥王结界波",
-                "虚无空间"
+                "金满而谦虚之壶","金满而谦虚之壶",
+                "墓穴的指名者", "墓穴的指名者", "抹杀之指名者","抹杀之指名者",
+                "灰流丽","灰流丽","无限泡影","次元吸引者","次元吸引者","次元吸引者",
+                "增殖的g","增殖的g","增殖的g",
+                "无限泡影", "无限泡影"
         };
+
+//        String[] deckList = new String[]{
+////                "随风旅鸟x帝企", "霞之谷的巨神鸟", "烈风帝 莱扎", "烈风之结界像",
+//                "随风旅鸟x知更鸟", "随风旅鸟x知更鸟", "随风旅鸟x知更鸟","随风旅鸟x知更鸟", "随风旅鸟x知更鸟", "随风旅鸟x知更鸟",
+//                "随风旅鸟x白头鹰", "随风旅鸟x白头鹰", "随风旅鸟x白头鹰",
+//                "随风旅鸟x鸵鸟", "随风旅鸟x鸵鸟", "随风旅鸟x鸵鸟",//"随风旅鸟与未知之风",
+//                "随风旅鸟与迷之地图", "随风旅鸟与迷之地图", "随风旅鸟与迷之地图",
+////                "随风旅鸟与旅行准备", "随风旅鸟与旅行准备","随风旅鸟与旅行准备",
+////                "随风旅鸟与梦之町",
+////                "强欲而谦虚之壶","强欲而谦虚之壶","强欲而谦虚之壶",
+////                "金满而谦虚之壶","金满而谦虚之壶","金满而谦虚之壶",
+//                "墓穴的指名者", "墓穴的指名者", "抹杀之指名者", "抹杀之指名者",
+//                "墓穴的指名者", "墓穴的指名者", "抹杀之指名者", "抹杀之指名者",
+//                "墓穴的指名者", "墓穴的指名者", "抹杀之指名者", "抹杀之指名者",
+//                "灰流丽","灰流丽", "灰流丽","无限泡影","次元吸引者","次元吸引者","次元吸引者",
+//                "灰流丽","灰流丽", "灰流丽","无限泡影","次元吸引者","次元吸引者",
+//        };
 
         this.deckList = new ArrayList<String>(Arrays.asList(deckList));
     }
@@ -75,7 +109,6 @@ public class FlundereezeEvaluator extends CardPool implements EvaluationSource {
         cardPool.put("强欲而谦虚之壶", new PotOfDuality());
         cardPool.put("金满而谦虚之壶", new PotOfProsperity());
         addSpellToCardPool("墓穴的指名者", "速攻", new ArrayList<>());
-        addSpellToCardPool("抹杀之指名者", "速攻", new ArrayList<>());
         addSpellToCardPool("抹杀之指名者", "速攻", new ArrayList<>());
         addSpellToCardPool("冥王结界波", "通常", new ArrayList<>());
         cardPool.put("吓人手中盒", new JackInTheHand());
@@ -106,9 +139,9 @@ public class FlundereezeEvaluator extends CardPool implements EvaluationSource {
 
     @Override
     public boolean handPlayable(Hand hand) {
-        if(new OpeningCombination("虚无空间").checkHandCombination(hand)){
-            hand.addTag("虚无空间");
-        }
+//        if(new OpeningCombination("虚无空间").checkHandCombination(hand)){
+//            hand.addTag("虚无空间");
+//        }
 
         if(new OpeningCombination("随风旅鸟x白头鹰", "随风旅鸟与未知地图").checkHandCombination(hand)){
             hand.addTag("防灰流丽");
@@ -123,6 +156,9 @@ public class FlundereezeEvaluator extends CardPool implements EvaluationSource {
         else if(new OpeningCombination("随风旅鸟x鸵鸟", "随风旅鸟与迷之地图").checkHandCombination(hand)){
             return true;
         }
+//        else if(new OpeningCombination("随风旅鸟x鸵鸟", "随风旅鸟x白头鹰").checkHandCombination(hand)){
+//            return true;
+//        }
         else if(new Strich().checkHandCombination(hand) &&
                 new OpeningCombination("随风旅鸟x白头鹰").checkHandCombination(hand)){
             return true;

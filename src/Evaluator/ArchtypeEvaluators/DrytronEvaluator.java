@@ -20,8 +20,8 @@ public class DrytronEvaluator extends CardPool implements EvaluationSource {
 
     public static void main(String[] args) {
 
-        HandEvaluator drytronEvaluator = new HandEvaluator(new DrytronEvaluator(), 1000000);
-        drytronEvaluator.showEvaluation(true);
+        HandEvaluator drytronEvaluator = new HandEvaluator(new DrytronEvaluator(), 10000);
+        drytronEvaluator.showEvaluation();
 
     }
 

@@ -14,6 +14,12 @@ public class TrapCard extends Card {
         this.tags = tags;
     }
 
+    public TrapCard(String name) {
+        super(name);
+        this.type = "通常";
+        this.tags = new ArrayList<>();
+    }
+
     public String getType() {
         return type;
     }
@@ -23,6 +29,7 @@ public class TrapCard extends Card {
         return "陷阱卡";
     }
 
+    @Override
     public ArrayList<String> getTags(){
         return tags;
     }

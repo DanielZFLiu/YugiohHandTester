@@ -20,10 +20,13 @@ public class HandEvaluator {
 
     public void showEvaluation(){
         float probability = this.calculatePlayability(source.deck());
-        System.out.println("不卡手率: " + probability);
 
-        for(String tag: this.tagCount.keySet()){
-            System.out.println(tag + ": " + (float)this.tagCount.get(tag)/(float)testHandNum);
+        if(testHandNum != 1){
+            System.out.println("不卡手率: " + probability);
+
+            for(String tag: this.tagCount.keySet()){
+                System.out.println(tag + ": " + (float)this.tagCount.get(tag)/(float)testHandNum);
+            }
         }
     }
 
@@ -94,6 +97,18 @@ public class HandEvaluator {
                     } else {
                         tagCount.put(tag, 1);
                     }
+                }
+            }
+
+            if(testHandNum == 1){
+                for(Card card: hand.returnStack()){
+                    System.out.println(card.getName());
+                }
+                System.out.println("");
+                System.out.println("可玩: " + source.handPlayable(possibleHands.get(0)));
+                System.out.println("");
+                for(String tag: possibleHands.get(0).getTags()){
+                    System.out.println(tag);
                 }
             }
 
